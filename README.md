@@ -14,6 +14,6 @@ The authoritative Xmip integration and architecture repository remains [IlleNils
 
 This repository contains contribution, security, support, issue and pull-request defaults. It contains no Xmip product source.
 
-The reusable Rust verification workflow is versioned through the `v1` branch. It runs only when another repository calls it or when a person manually dispatches it. It has no push, pull-request or scheduled trigger.
+The reusable Rust verification workflow is versioned through the `v1` branch and can run only when another repository calls it. The template provides a manual-only caller; neither workflow has a push, pull-request or scheduled trigger.
 
-Its ordered verification stages are formatting, semantic analysis, linting, compilation and linking, and test execution. Packaging and publishing are intentionally absent.
+The ordered verification stages are formatting, semantic analysis, linting, compilation and linking, and test execution. Packaging and publishing are intentionally absent.
