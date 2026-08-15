@@ -1,0 +1,42 @@
+name: Requirement or architecture proposal
+description: Propose a requirement, repository boundary, contract or architecture change.
+title: "[Architecture] "
+body:
+  - type: textarea
+    id: requirement
+    attributes:
+      label: Requirement
+      description: State the need independently of a preferred implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: current_gap
+    attributes:
+      label: Current gap
+      description: Explain why the current architecture does not satisfy the requirement.
+    validations:
+      required: true
+  - type: textarea
+    id: ownership
+    attributes:
+      label: Ownership and classification
+      description: Identify the likely capability, repository and Foundation, Capabilities, Technology, Operations or Platform classification.
+    validations:
+      required: true
+  - type: textarea
+    id: contracts
+    attributes:
+      label: Contracts and dependencies
+      description: List affected public contracts, dependency directions and technology children.
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and migration
+      description: Describe breaking changes, compatibility constraints and migration needs.
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification approach
+      description: Explain how the requirement and architecture change can be verified.
+    validations:
+      required: true

@@ -1,0 +1,63 @@
+name: Bug report
+description: Report reproducible behaviour that conflicts with an Xmip requirement or contract.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report the problem in the repository that owns the affected capability. Do not include secrets or vulnerability details.
+  - type: input
+    id: repository
+    attributes:
+      label: Affected repository
+      description: Name the Xmip repository or capability.
+      placeholder: xmip-core
+    validations:
+      required: true
+  - type: textarea
+    id: requirement
+    attributes:
+      label: Requirement or contract
+      description: State the expected requirement, contract or architecture rule.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behaviour
+      description: Describe what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: Describe what should have happened.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Give the smallest reproducible sequence and relevant inputs.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include version or commit, operating system and runtime where relevant.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Add sanitized logs, traces or screenshots.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I removed credentials, secrets, private keys and personal data.
+          required: true
+        - label: This report does not disclose a security vulnerability.
+          required: true
